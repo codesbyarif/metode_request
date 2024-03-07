@@ -1,3 +1,11 @@
+<?php 
+if(!isset($_GET["nama"])){
+    //redirect
+    header("Location: latihan1.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +14,7 @@
     <title>Detail Mahasiswa</title>
 </head>
 <body>
+    <h1>Detail Mahasiswa</h1>
     <ul>
         <li><img src="<?= $_GET["gambar"];?>" ></li>
         <li><?= $_GET["nama"];?></li>
